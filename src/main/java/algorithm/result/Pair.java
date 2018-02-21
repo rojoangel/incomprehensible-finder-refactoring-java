@@ -8,9 +8,6 @@ public class Pair implements Result {
     private Person youngest;
     private Person eldest;
 
-    public Pair() {
-    }
-
     public Pair(Person onePerson, Person anotherPerson) {
         if (onePerson.isYoungerThan(anotherPerson)) {
             this.youngest = onePerson;
