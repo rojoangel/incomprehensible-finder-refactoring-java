@@ -18,5 +18,9 @@ public class Person {
     public boolean isYoungerThan(Person anotherPerson) {
         return this.birthDate.after(anotherPerson.birthDate);
     }
+
+    public long birthDateDistanceTo(Person anotherPerson) {
+        return Math.abs(this.birthDate.getTime() - anotherPerson.getBirthDate().getTime());
+    }
 }
 

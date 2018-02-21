@@ -20,7 +20,7 @@ public class Pair {
     }
 
     public long getBirthDateDistance() {
-        return Math.abs(eldest.getBirthDate().getTime() - youngest.getBirthDate().getTime());
+        return eldest.birthDateDistanceTo(youngest);
     }
 
     @Override
