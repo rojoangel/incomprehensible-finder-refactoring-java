@@ -33,10 +33,10 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Closest_Two_For_Two_People() {
-		List<Person> list = new ArrayList<Person>();
-		list.add(sue);
-		list.add(greg);
-		Finder finder = new Finder(list);
+		People people = new People();
+		people.add(sue);
+		people.add(greg);
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Closest);
 
@@ -45,11 +45,11 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Furthest_Two_For_Two_People() {
-		List<Person> list = new ArrayList<Person>();
-		list.add(mike);
-		list.add(greg);
+		People people = new People();
+		people.add(mike);
+		people.add(greg);
 
-		Finder finder = new Finder(list);
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Furthest);
 
@@ -58,12 +58,12 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Furthest_Two_For_Four_People() {
-		List<Person> list = new ArrayList<Person>();
-		list.add(sue);
-		list.add(sarah);
-		list.add(mike);
-		list.add(greg);
-		Finder finder = new Finder(list);
+		People people = new People();
+		people.add(sue);
+		people.add(sarah);
+		people.add(mike);
+		people.add(greg);
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Furthest);
 
@@ -72,13 +72,13 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Closest_Two_For_Four_People() {
-		List<Person> list = new ArrayList<Person>();
-		list.add(sue);
-		list.add(sarah);
-		list.add(mike);
-		list.add(greg);
+		People people = new People();
+		people.add(sue);
+		people.add(sarah);
+		people.add(mike);
+		people.add(greg);
 
-		Finder finder = new Finder(list);
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Closest);
 
