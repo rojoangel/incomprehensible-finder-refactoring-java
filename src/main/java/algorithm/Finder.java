@@ -27,8 +27,7 @@ public class Finder {
 	}
 
     private Pair find(Algorithm algorithm, List<Pair> tr) {
-
-        Pairs pairs = new Pairs();
-        return pairs.find(algorithm, tr);
+        Pairs pairs = new Pairs(tr);
+        return pairs.find(algorithm);
     }
 }
