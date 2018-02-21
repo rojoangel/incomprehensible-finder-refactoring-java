@@ -25,9 +25,9 @@ public class FinderTests {
 		Finder finder = new Finder(list);
 
 		Pair result = finder.Find(FT.Closest);
-		assertEquals(null, result.onePerson);
+		assertEquals(null, result.youngest);
 
-		assertEquals(null, result.anotherPerson);
+		assertEquals(null, result.eldest);
 	}
 
 	@Test
@@ -39,8 +39,8 @@ public class FinderTests {
 
 		Pair result = finder.Find(FT.Closest);
 
-		assertEquals(null, result.onePerson);
-		assertEquals(null, result.anotherPerson);
+		assertEquals(null, result.youngest);
+		assertEquals(null, result.eldest);
 	}
 
 	@Test
@@ -52,8 +52,8 @@ public class FinderTests {
 
 		Pair result = finder.Find(FT.Closest);
 
-		assertEquals(sue, result.onePerson);
-		assertEquals(greg, result.anotherPerson);
+		assertEquals(sue, result.youngest);
+		assertEquals(greg, result.eldest);
 	}
 
 	@Test
@@ -66,8 +66,8 @@ public class FinderTests {
 
 		Pair result = finder.Find(FT.Furthest);
 
-		assertEquals(greg, result.onePerson);
-		assertEquals(mike, result.anotherPerson);
+		assertEquals(greg, result.youngest);
+		assertEquals(mike, result.eldest);
 	}
 
 	@Test
@@ -81,8 +81,8 @@ public class FinderTests {
 
 		Pair result = finder.Find(FT.Furthest);
 
-		assertEquals(sue, result.onePerson);
-		assertEquals(sarah, result.anotherPerson);
+		assertEquals(sue, result.youngest);
+		assertEquals(sarah, result.eldest);
 	}
 
 	@Test
@@ -97,8 +97,8 @@ public class FinderTests {
 
 		Pair result = finder.Find(FT.Closest);
 
-		assertEquals(sue, result.onePerson);
-		assertEquals(greg, result.anotherPerson);
+		assertEquals(sue, result.youngest);
+		assertEquals(greg, result.eldest);
 	}
 
 }

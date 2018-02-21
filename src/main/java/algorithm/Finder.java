@@ -16,13 +16,13 @@ public class Finder {
 			for (int j = i + 1; j < people.size(); j++) {
 				Pair r = new Pair();
 				if (people.get(i).birthDate.getTime() < people.get(j).birthDate.getTime()) {
-					r.onePerson = people.get(i);
-					r.anotherPerson = people.get(j);
+					r.youngest = people.get(i);
+					r.eldest = people.get(j);
 				} else {
-					r.onePerson = people.get(j);
-					r.anotherPerson = people.get(i);
+					r.youngest = people.get(j);
+					r.eldest = people.get(i);
 				}
-				r.birthDateDistance = r.anotherPerson.birthDate.getTime() - r.onePerson.birthDate.getTime();
+				r.birthDateDistance = r.eldest.birthDate.getTime() - r.youngest.birthDate.getTime();
 				tr.add(r);
 			}
 		}
