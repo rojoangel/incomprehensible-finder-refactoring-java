@@ -15,7 +15,7 @@ public class Finder {
 		for (int i = 0; i < people.size() - 1; i++) {
 			for (int j = i + 1; j < people.size(); j++) {
 				Pair r;
-				if (people.get(i).birthDate.getTime() < people.get(j).birthDate.getTime()) {
+				if (people.get(i).getBirthDate().getTime() < people.get(j).getBirthDate().getTime()) {
                     r = new Pair(people.get(i), people.get(j));
 				} else {
                     r = new Pair(people.get(j), people.get(i));
