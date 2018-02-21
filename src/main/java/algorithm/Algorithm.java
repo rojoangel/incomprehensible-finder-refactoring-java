@@ -1,5 +1,7 @@
 package algorithm;
 
+import algorithm.result.Pair;
+
 public enum Algorithm {
     Closest {
         @Override

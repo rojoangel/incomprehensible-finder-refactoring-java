@@ -1,5 +1,7 @@
 package algorithm;
 
+import algorithm.result.Pair;
+import algorithm.result.Result;
 import org.junit.Test;
 
 import static algorithm.SamplePerson.*;
@@ -12,7 +14,7 @@ public class FinderTests {
 		People people = new People();
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Closest);
+		Result result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(), result);
 	}
@@ -23,7 +25,7 @@ public class FinderTests {
 		people.add(sue);
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Closest);
+		Result result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(), result);
 	}
@@ -35,7 +37,7 @@ public class FinderTests {
 		people.add(greg);
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Closest);
+		Result result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(sue, greg), result);
 	}
@@ -48,7 +50,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Furthest);
+		Result result = finder.Find(Algorithm.Furthest);
 
 		assertEquals(new Pair(greg, mike), result);
 	}
@@ -62,7 +64,7 @@ public class FinderTests {
 		people.add(greg);
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Furthest);
+		Result result = finder.Find(Algorithm.Furthest);
 
 		assertEquals(new Pair(sue, sarah), result);
 	}
@@ -77,7 +79,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(people);
 
-		Pair result = finder.Find(Algorithm.Closest);
+		Result result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(sue, greg), result);
 	}

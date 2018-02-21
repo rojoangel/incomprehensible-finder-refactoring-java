@@ -1,5 +1,8 @@
 package algorithm;
 
+import algorithm.result.Pair;
+import algorithm.result.Result;
+
 public class Finder {
     private final People people;
 
@@ -7,7 +10,7 @@ public class Finder {
         this.people = people;
     }
 
-    public Pair Find(Algorithm algorithm) {
+    public Result Find(Algorithm algorithm) {
         return people.pairs().find(algorithm);
     }
 }

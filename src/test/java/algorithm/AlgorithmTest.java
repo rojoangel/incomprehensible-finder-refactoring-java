@@ -1,5 +1,6 @@
 package algorithm;
 
+import algorithm.result.Pair;
 import org.junit.Test;
 
 import static algorithm.SamplePerson.*;

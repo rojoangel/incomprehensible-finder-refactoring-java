@@ -1,5 +1,8 @@
 package algorithm;
 
+import algorithm.result.Pair;
+import algorithm.result.Result;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +17,7 @@ public class Pairs {
         pairs.add(new Pair(onePerson, anotherPerson));
     }
 
-    public Pair find(Algorithm algorithm) {
+    public Result find(Algorithm algorithm) {
 
         if (pairs.size() < 1) {
             return new Pair();

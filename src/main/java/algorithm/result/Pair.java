@@ -1,8 +1,10 @@
-package algorithm;
+package algorithm.result;
+
+import algorithm.Person;
 
 import java.util.Objects;
 
-public class Pair {
+public class Pair implements Result {
     private Person youngest;
     private Person eldest;
 
@@ -19,6 +21,7 @@ public class Pair {
         }
     }
 
+    @Override
     public long getBirthDateDistance() {
         return eldest.birthDateDistanceTo(youngest);
     }
