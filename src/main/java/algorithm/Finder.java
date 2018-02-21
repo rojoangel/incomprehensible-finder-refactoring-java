@@ -14,13 +14,11 @@ public class Finder {
 
 		for (int i = 0; i < people.size() - 1; i++) {
 			for (int j = i + 1; j < people.size(); j++) {
-				Pair r = new Pair();
+				Pair r;
 				if (people.get(i).birthDate.getTime() < people.get(j).birthDate.getTime()) {
-					r.youngest = people.get(i);
-					r.eldest = people.get(j);
+                    r = new Pair(people.get(i), people.get(j));
 				} else {
-					r.youngest = people.get(j);
-					r.eldest = people.get(i);
+                    r = new Pair(people.get(j), people.get(i));
 				}
 				tr.add(r);
 			}
