@@ -22,7 +22,6 @@ public class Finder {
 					r.youngest = people.get(j);
 					r.eldest = people.get(i);
 				}
-				r.setBirthDateDistance(r.eldest.birthDate.getTime() - r.youngest.birthDate.getTime());
 				tr.add(r);
 			}
 		}
