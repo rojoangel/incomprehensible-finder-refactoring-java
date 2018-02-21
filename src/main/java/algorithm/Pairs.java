@@ -15,6 +15,11 @@ public class Pairs {
     }
 
     public Pair find(Algorithm algorithm) {
+
+        if (pairs.size() < 1) {
+            return new Pair();
+        }
+
         Pair answer = pairs.get(0);
 
         for (Pair result : pairs) {

@@ -12,10 +12,6 @@ public class Finder {
 
 	public Pair Find(Algorithm algorithm) {
 
-        if (personList.size() < 2) {
-            return new Pair();
-        }
-
         return people.pairs().find(algorithm);
     }
 }
