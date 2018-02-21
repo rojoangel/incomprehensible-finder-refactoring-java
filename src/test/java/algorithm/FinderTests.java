@@ -1,5 +1,6 @@
 package algorithm;
 
+import algorithm.result.Empty;
 import algorithm.result.Pair;
 import algorithm.result.Result;
 import org.junit.Test;
@@ -16,7 +17,7 @@ public class FinderTests {
 
 		Result result = finder.Find(Algorithm.Closest);
 
-		assertEquals(new Pair(), result);
+		assertEquals(new Empty(), result);
 	}
 
 	@Test
@@ -27,7 +28,7 @@ public class FinderTests {
 
 		Result result = finder.Find(Algorithm.Closest);
 
-		assertEquals(new Pair(), result);
+		assertEquals(new Empty(), result);
 	}
 
 	@Test

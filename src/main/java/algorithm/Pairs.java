@@ -1,5 +1,6 @@
 package algorithm;
 
+import algorithm.result.Empty;
 import algorithm.result.Pair;
 import algorithm.result.Result;
 
@@ -20,7 +21,7 @@ public class Pairs {
     public Result find(Algorithm algorithm) {
 
         if (pairs.size() < 1) {
-            return new Pair();
+            return new Empty();
         }
 
         Pair answer = pairs.get(0);
