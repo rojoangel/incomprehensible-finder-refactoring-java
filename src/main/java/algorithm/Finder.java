@@ -1,5 +1,4 @@
 package algorithm;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Finder {
@@ -15,19 +14,12 @@ public class Finder {
             return new Pair();
         }
 
-        Pairs pairs = pairs();
+        Pairs pairs = pairs(this.people);
         return pairs.find(algorithm);
     }
 
-    private Pairs pairs() {
-        List<Pair> tr = new ArrayList<Pair>();
-
-        for (int i = 0; i < people.size() - 1; i++) {
-            for (int j = i + 1; j < people.size(); j++) {
-                tr.add(new Pair(people.get(i), people.get(j)));
-            }
-        }
-
-        return new Pairs(tr);
+    private Pairs pairs(List<Person> peopleList) {
+        People people = new People(peopleList);
+        return people.pairs();
     }
 }
