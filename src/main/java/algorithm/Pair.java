@@ -37,4 +37,12 @@ public class Pair {
 
         return Objects.hash(youngest, eldest);
     }
+
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "youngest=" + youngest +
+                ", eldest=" + eldest +
+                '}';
+    }
 }
