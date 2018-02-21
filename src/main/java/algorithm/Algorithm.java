@@ -1,6 +1,6 @@
 package algorithm;
 
-public enum FT {
+public enum Algorithm {
     Closest {
         @Override
         Pair find(Pair onePair, Pair anotherPair) {

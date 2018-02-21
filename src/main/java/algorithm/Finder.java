@@ -9,7 +9,7 @@ public class Finder {
 		this.people = people;
 	}
 
-	public Pair Find(FT ft) {
+	public Pair Find(Algorithm algorithm) {
 
         if (people.size() < 2) {
             return new Pair();
@@ -25,7 +25,7 @@ public class Finder {
 
 		Pair answer = tr.get(0);
 		for (Pair result : tr) {
-		    answer = ft.find(result, answer);
+		    answer = algorithm.find(result, answer);
 		}
 
 		return answer;

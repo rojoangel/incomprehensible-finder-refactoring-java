@@ -15,7 +15,7 @@ public class FinderTests {
 		List<Person> list = new ArrayList<Person>();
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Closest);
+		Pair result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(), result);
 	}
@@ -27,7 +27,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Closest);
+		Pair result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(), result);
 	}
@@ -39,7 +39,7 @@ public class FinderTests {
 		list.add(greg);
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Closest);
+		Pair result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(sue, greg), result);
 	}
@@ -52,7 +52,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Furthest);
+		Pair result = finder.Find(Algorithm.Furthest);
 
 		assertEquals(new Pair(greg, mike), result);
 	}
@@ -66,7 +66,7 @@ public class FinderTests {
 		list.add(greg);
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Furthest);
+		Pair result = finder.Find(Algorithm.Furthest);
 
 		assertEquals(new Pair(sue, sarah), result);
 	}
@@ -81,7 +81,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		Pair result = finder.Find(FT.Closest);
+		Pair result = finder.Find(Algorithm.Closest);
 
 		assertEquals(new Pair(sue, greg), result);
 	}
