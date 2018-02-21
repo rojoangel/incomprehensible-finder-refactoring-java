@@ -10,7 +10,7 @@ public class Pair {
     }
 
     public Pair(Person onePerson, Person anotherPerson) {
-        if (onePerson.getBirthDate().getTime() < anotherPerson.getBirthDate().getTime()) {
+        if (onePerson.isYoungerThan(anotherPerson)) {
             this.youngest = onePerson;
             this.eldest = anotherPerson;
         } else {
