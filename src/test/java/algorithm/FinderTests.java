@@ -12,8 +12,8 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Empty_Results_When_Given_Empty_List() {
-		List<Person> list = new ArrayList<Person>();
-		Finder finder = new Finder(list);
+		People people = new People();
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Closest);
 

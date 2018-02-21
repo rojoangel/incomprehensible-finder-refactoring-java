@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class People {
-    private final List<Person> people;
+    private List<Person> people = new ArrayList<Person>();
+
+    public People() {
+    }
 
     public People(List<Person> people) {
         this.people = people;
