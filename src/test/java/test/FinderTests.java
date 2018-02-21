@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import algorithm.F;
@@ -25,7 +24,7 @@ public class FinderTests {
 		List<Person> list = new ArrayList<Person>();
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.One);
+		F result = finder.Find(FT.Closest);
 		assertEquals(null, result.P1);
 
 		assertEquals(null, result.P2);
@@ -38,7 +37,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.One);
+		F result = finder.Find(FT.Closest);
 
 		assertEquals(null, result.P1);
 		assertEquals(null, result.P2);
@@ -51,7 +50,7 @@ public class FinderTests {
 		list.add(greg);
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.One);
+		F result = finder.Find(FT.Closest);
 
 		assertEquals(sue, result.P1);
 		assertEquals(greg, result.P2);
@@ -96,7 +95,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.One);
+		F result = finder.Find(FT.Closest);
 
 		assertEquals(sue, result.P1);
 		assertEquals(greg, result.P2);

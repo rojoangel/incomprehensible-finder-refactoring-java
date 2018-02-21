@@ -34,7 +34,7 @@ public class Finder {
 		F answer = tr.get(0);
 		for (F result : tr) {
 			switch (ft) {
-				case One :
+				case Closest:
 					if (result.D < answer.D) {
 						answer = result;
 					}
