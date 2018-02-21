@@ -3,8 +3,8 @@ package algorithm;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static test.SamplePerson.greg;
-import static test.SamplePerson.sue;
+import static algorithm.SamplePerson.greg;
+import static algorithm.SamplePerson.sue;
 
 public class PairTest {
 

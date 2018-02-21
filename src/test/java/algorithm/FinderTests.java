@@ -1,16 +1,12 @@
-package test;
+package algorithm;
 
-import algorithm.FT;
-import algorithm.Finder;
-import algorithm.Pair;
-import algorithm.Person;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static test.SamplePerson.*;
+import static algorithm.SamplePerson.*;
 
 public class FinderTests {
 
