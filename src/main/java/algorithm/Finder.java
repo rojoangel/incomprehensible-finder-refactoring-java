@@ -23,10 +23,6 @@ public class Finder {
 			}
 		}
 
-        return find(algorithm, tr);
-	}
-
-    private Pair find(Algorithm algorithm, List<Pair> tr) {
         Pairs pairs = new Pairs(tr);
         return pairs.find(algorithm);
     }
