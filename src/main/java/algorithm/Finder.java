@@ -25,19 +25,7 @@ public class Finder {
 
 		Pair answer = tr.get(0);
 		for (Pair result : tr) {
-			switch (ft) {
-				case Closest:
-					if (result.getBirthDateDistance() < answer.getBirthDateDistance()) {
-						answer = result;
-					}
-					break;
-
-				case Furthest:
-					if (result.getBirthDateDistance() > answer.getBirthDateDistance()) {
-						answer = result;
-					}
-					break;
-			}
+		    answer = ft.find(result, answer);
 		}
 
 		return answer;
