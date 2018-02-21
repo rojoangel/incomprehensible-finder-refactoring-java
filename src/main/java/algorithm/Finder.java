@@ -2,24 +2,20 @@ package algorithm;
 import java.util.List;
 
 public class Finder {
-	private final List<Person> people;
+	private final List<Person> personList;
+	private final People people;
 
-    public Finder(List<Person> people) {
-		this.people = people;
+    public Finder(List<Person> peopleList) {
+		this.personList = peopleList;
+		this.people = new People(peopleList);
 	}
 
 	public Pair Find(Algorithm algorithm) {
 
-        if (people.size() < 2) {
+        if (personList.size() < 2) {
             return new Pair();
         }
 
-        Pairs pairs = pairs(this.people);
-        return pairs.find(algorithm);
-    }
-
-    private Pairs pairs(List<Person> peopleList) {
-        People people = new People(peopleList);
-        return people.pairs();
+        return people.pairs().find(algorithm);
     }
 }
