@@ -10,8 +10,8 @@ public class Pairs {
         this.pairs = new ArrayList<Pair>();
     }
 
-    public void add(Pair pair) {
-        pairs.add(pair);
+    public void add(Person onePerson, Person anotherPerson) {
+        pairs.add(new Pair(onePerson, anotherPerson));
     }
 
     public Pair find(Algorithm algorithm) {
