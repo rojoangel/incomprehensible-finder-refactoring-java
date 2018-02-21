@@ -3,8 +3,8 @@ package algorithm;
 import java.util.Objects;
 
 public class Pair {
-	public Person youngest;
-	public Person eldest;
+	private Person youngest;
+	private Person eldest;
 
     public Pair() {
     }
