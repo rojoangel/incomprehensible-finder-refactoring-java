@@ -1,5 +1,5 @@
 package algorithm;
-public class F {
+public class Pair {
 	public Person P1;
 	public Person P2;
 	public long D;
