@@ -12,7 +12,7 @@ public class People {
 
     Pairs pairs() {
 
-        Pairs pairs = new Pairs(new ArrayList<Pair>());
+        Pairs pairs = new Pairs();
 
         for (int i = 0; i < people.size() - 1; i++) {
             for (int j = i + 1; j < people.size(); j++) {
