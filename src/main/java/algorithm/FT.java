@@ -1,4 +1,4 @@
 package algorithm;
 public enum FT {
-	Closest, Two
+	Closest, Furthest
 }

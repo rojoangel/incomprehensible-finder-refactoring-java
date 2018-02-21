@@ -64,7 +64,7 @@ public class FinderTests {
 
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.Two);
+		F result = finder.Find(FT.Furthest);
 
 		assertEquals(greg, result.P1);
 		assertEquals(mike, result.P2);
@@ -79,7 +79,7 @@ public class FinderTests {
 		list.add(greg);
 		Finder finder = new Finder(list);
 
-		F result = finder.Find(FT.Two);
+		F result = finder.Find(FT.Furthest);
 
 		assertEquals(sue, result.P1);
 		assertEquals(sarah, result.P2);

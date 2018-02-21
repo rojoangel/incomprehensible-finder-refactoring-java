@@ -40,7 +40,7 @@ public class Finder {
 					}
 					break;
 
-				case Two :
+				case Furthest:
 					if (result.D > answer.D) {
 						answer = result;
 					}
