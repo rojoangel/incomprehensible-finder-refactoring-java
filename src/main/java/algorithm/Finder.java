@@ -22,7 +22,7 @@ public class Finder {
 					r.youngest = people.get(j);
 					r.eldest = people.get(i);
 				}
-				r.birthDateDistance = r.eldest.birthDate.getTime() - r.youngest.birthDate.getTime();
+				r.setBirthDateDistance(r.eldest.birthDate.getTime() - r.youngest.birthDate.getTime());
 				tr.add(r);
 			}
 		}
@@ -35,13 +35,13 @@ public class Finder {
 		for (Pair result : tr) {
 			switch (ft) {
 				case Closest:
-					if (result.birthDateDistance < answer.birthDateDistance) {
+					if (result.getBirthDateDistance() < answer.getBirthDateDistance()) {
 						answer = result;
 					}
 					break;
 
 				case Furthest:
-					if (result.birthDateDistance > answer.birthDateDistance) {
+					if (result.getBirthDateDistance() > answer.getBirthDateDistance()) {
 						answer = result;
 					}
 					break;

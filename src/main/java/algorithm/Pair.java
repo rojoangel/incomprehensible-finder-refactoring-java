@@ -2,5 +2,13 @@ package algorithm;
 public class Pair {
 	public Person youngest;
 	public Person eldest;
-	public long birthDateDistance;
+	private long birthDateDistance;
+
+    public long getBirthDateDistance() {
+        return birthDateDistance;
+    }
+
+    public void setBirthDateDistance(long birthDateDistance) {
+        this.birthDateDistance = birthDateDistance;
+    }
 }
