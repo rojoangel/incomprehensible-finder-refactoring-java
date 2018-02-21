@@ -11,16 +11,12 @@ public class Person {
 		this.birthDate = birthDate;
 	}
 
-	public Date getBirthDate() {
-		return birthDate;
-	}
-
     public boolean isYoungerThan(Person anotherPerson) {
         return this.birthDate.after(anotherPerson.birthDate);
     }
 
     public long birthDateDistanceTo(Person anotherPerson) {
-        return Math.abs(this.birthDate.getTime() - anotherPerson.getBirthDate().getTime());
+        return Math.abs(this.birthDate.getTime() - anotherPerson.birthDate.getTime());
     }
 }
 

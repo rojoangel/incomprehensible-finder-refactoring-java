@@ -18,6 +18,6 @@ public class PairTest {
     @Test
     public void birthDateDistance_should_be_the_difference_between_dates() {
         Pair onePair = new Pair(sue, greg);
-        assertEquals(greg.getBirthDate().getTime() - sue.getBirthDate().getTime(), onePair.getBirthDateDistance());
+        assertEquals(76204800000L, onePair.getBirthDateDistance());
     }
 }
