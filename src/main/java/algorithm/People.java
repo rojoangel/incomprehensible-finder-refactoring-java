@@ -6,13 +6,6 @@ import java.util.List;
 public class People {
     private List<Person> people = new ArrayList<Person>();
 
-    public People() {
-    }
-
-    public People(List<Person> people) {
-        this.people = people;
-    }
-
     public void add(Person person) {
         people.add(person);
     }
