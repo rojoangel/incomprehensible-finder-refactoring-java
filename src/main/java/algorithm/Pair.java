@@ -2,5 +2,5 @@ package algorithm;
 public class Pair {
 	public Person onePerson;
 	public Person anotherPerson;
-	public long D;
+	public long birthDateDistance;
 }
