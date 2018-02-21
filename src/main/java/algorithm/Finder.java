@@ -23,11 +23,15 @@ public class Finder {
 			}
 		}
 
-		Pair answer = tr.get(0);
-		for (Pair result : tr) {
-		    answer = algorithm.find(result, answer);
-		}
-
-		return answer;
+        return find(algorithm, tr);
 	}
+
+    private Pair find(Algorithm algorithm, List<Pair> tr) {
+        Pair answer = tr.get(0);
+        for (Pair result : tr) {
+            answer = algorithm.find(result, answer);
+        }
+
+        return answer;
+    }
 }
