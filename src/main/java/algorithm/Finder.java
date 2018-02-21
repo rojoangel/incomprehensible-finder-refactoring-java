@@ -5,7 +5,7 @@ import java.util.List;
 public class Finder {
 	private final List<Person> people;
 
-	public Finder(List<Person> people) {
+    public Finder(List<Person> people) {
 		this.people = people;
 	}
 
@@ -27,11 +27,8 @@ public class Finder {
 	}
 
     private Pair find(Algorithm algorithm, List<Pair> tr) {
-        Pair answer = tr.get(0);
-        for (Pair result : tr) {
-            answer = algorithm.find(result, answer);
-        }
 
-        return answer;
+        Pairs pairs = new Pairs();
+        return pairs.find(algorithm, tr);
     }
 }
