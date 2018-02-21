@@ -13,6 +13,10 @@ public class People {
         this.people = people;
     }
 
+    public void add(Person person) {
+        people.add(person);
+    }
+
     Pairs pairs() {
 
         Pairs pairs = new Pairs();

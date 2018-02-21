@@ -22,10 +22,9 @@ public class FinderTests {
 
 	@Test
 	public void Returns_Empty_Results_When_Given_One_Person() {
-		List<Person> list = new ArrayList<Person>();
-		list.add(sue);
-
-		Finder finder = new Finder(list);
+		People people = new People();
+		people.add(sue);
+		Finder finder = new Finder(people);
 
 		Pair result = finder.Find(Algorithm.Closest);
 
