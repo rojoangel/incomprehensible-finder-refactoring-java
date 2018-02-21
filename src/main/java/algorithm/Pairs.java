@@ -9,6 +9,10 @@ public class Pairs {
         this.pairs = pairs;
     }
 
+    public void add(Pair pair) {
+        pairs.add(pair);
+    }
+    
     public Pair find(Algorithm algorithm) {
         Pair answer = pairs.get(0);
 

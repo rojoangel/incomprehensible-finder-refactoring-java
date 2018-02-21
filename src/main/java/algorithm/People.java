@@ -11,14 +11,15 @@ public class People {
     }
 
     Pairs pairs() {
-        List<Pair> tr = new ArrayList<Pair>();
+
+        Pairs pairs = new Pairs(new ArrayList<Pair>());
 
         for (int i = 0; i < people.size() - 1; i++) {
             for (int j = i + 1; j < people.size(); j++) {
-                tr.add(new Pair(people.get(i), people.get(j)));
+                pairs.add(new Pair(people.get(i), people.get(j)));
             }
         }
 
-        return new Pairs(tr);
+        return pairs;
     }
 }
