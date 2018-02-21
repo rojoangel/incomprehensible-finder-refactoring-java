@@ -2,11 +2,8 @@ package algorithm;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 import static algorithm.SamplePerson.*;
+import static org.junit.Assert.assertEquals;
 
 public class FinderTests {
 
