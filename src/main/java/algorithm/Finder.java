@@ -15,15 +15,19 @@ public class Finder {
             return new Pair();
         }
 
+        Pairs pairs = pairs();
+        return pairs.find(algorithm);
+    }
+
+    private Pairs pairs() {
         List<Pair> tr = new ArrayList<Pair>();
 
-		for (int i = 0; i < people.size() - 1; i++) {
-			for (int j = i + 1; j < people.size(); j++) {
-				tr.add(new Pair(people.get(i), people.get(j)));
-			}
-		}
+        for (int i = 0; i < people.size() - 1; i++) {
+            for (int j = i + 1; j < people.size(); j++) {
+                tr.add(new Pair(people.get(i), people.get(j)));
+            }
+        }
 
-        Pairs pairs = new Pairs(tr);
-        return pairs.find(algorithm);
+        return new Pairs(tr);
     }
 }
