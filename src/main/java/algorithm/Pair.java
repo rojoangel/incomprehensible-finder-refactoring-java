@@ -3,15 +3,20 @@ package algorithm;
 import java.util.Objects;
 
 public class Pair {
-	private Person youngest;
-	private Person eldest;
+    private Person youngest;
+    private Person eldest;
 
     public Pair() {
     }
 
-    public Pair(Person youngest, Person eldest) {
-        this.youngest = youngest;
-        this.eldest = eldest;
+    public Pair(Person onePerson, Person anotherPerson) {
+        if (onePerson.getBirthDate().getTime() < anotherPerson.getBirthDate().getTime()) {
+            this.youngest = onePerson;
+            this.eldest = anotherPerson;
+        } else {
+            this.youngest = anotherPerson;
+            this.eldest = onePerson;
+        }
     }
 
     public long getBirthDateDistance() {
