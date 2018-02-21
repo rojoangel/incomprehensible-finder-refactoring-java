@@ -10,16 +10,17 @@ public class Finder {
 	}
 
 	public Pair Find(FT ft) {
-		List<Pair> tr = new ArrayList<Pair>();
+
+        if (people.size() < 2) {
+            return new Pair();
+        }
+
+        List<Pair> tr = new ArrayList<Pair>();
 
 		for (int i = 0; i < people.size() - 1; i++) {
 			for (int j = i + 1; j < people.size(); j++) {
 				tr.add(new Pair(people.get(i), people.get(j)));
 			}
-		}
-
-		if (tr.size() < 1) {
-			return new Pair();
 		}
 
 		Pair answer = tr.get(0);
